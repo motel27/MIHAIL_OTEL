@@ -6,13 +6,13 @@ public class HomeWork2 {
 
         System.out.println("Hello World!");
 
-      //  long CurrentWorldPopulation = 7811080815;
+        long CurrentWorldPopulation = 7811080815L;
             int CarsProducedThisYear = 55235358;
             char FirstLetterInAlphabet = 'A';
             boolean JavaIsAmazing = true;
             float Pi = 3.14159f;
 
-      //System.out.println(CurrentWorldPopulation);
+      System.out.println(CurrentWorldPopulation);
         System.out.println(CarsProducedThisYear);
         System.out.println(FirstLetterInAlphabet);
         System.out.println(JavaIsAmazing);
