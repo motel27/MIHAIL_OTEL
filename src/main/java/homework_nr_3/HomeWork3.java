@@ -4,7 +4,7 @@ public class HomeWork3 {
 
     public static void main(String[] args) {
 
-      int month = 11;                                             //step 4 from homework
+      int month = 13;                                             //step 4 from homework
        switch (month) {
            case 1: System.out.println(month + " January");
                break;
@@ -30,6 +30,7 @@ public class HomeWork3 {
                break;
            case 12: System.out.println(month + " December");
                break;
+           default: System.out.print("Invalid Month number");
        }
 
     for (int a = 100; a<=1000; a++){                                //step 5 from homework
