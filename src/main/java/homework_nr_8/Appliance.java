@@ -16,6 +16,7 @@ public abstract class Appliance {
         System.out.println("Brand - " + brand);
         System.out.println("Power - " + power + " Bt");
         System.out.println(turnOn());
+
     }
 
 
@@ -25,18 +26,23 @@ public abstract class Appliance {
 
                     new WashingMachine("LG", 2000, 7.5),
                     new Microwave("Samsung", 1200, true),
+                    new  AirConditioner ("Daikin", 1500, 12000, true)
             };
 
             for (int i = 0; i != appliance.length; i++) {
-                //System.out.println(appliance[i].displayInfo());
                 appliance[i].displayInfo();
 
                 if (appliance[i] instanceof WashingMachine) {
-                    WashingMachine machine = (WashingMachine) appliance[i];
-                    System.out.println("This is a washing machine with a load capacity of " + machine.loadCapacity + "kg");
+                    WashingMachine appliance1 = (WashingMachine) appliance[i];
+                    System.out.println("This is a washing machine with a load capacity of " + appliance1.loadCapacity + "kg");
+                    System.out.println("-----------------------");
                 } else if (appliance[i] instanceof Microwave) {
-                    Microwave machine2 = (Microwave) appliance [i];
-                    System.out.println("This is a microwave with a grill: " + machine2.hasGrill);
+                    Microwave appliance2 = (Microwave) appliance [i];
+                    System.out.println("This is a microwave with a grill: " + appliance2.hasGrill);
+                    System.out.println("-----------------------");
+                } else if (appliance[i] instanceof AirConditioner){
+                    AirConditioner appliance3 = (AirConditioner) appliance[i];
+                    System.out.println("This is an air conditioner with cooling power of "+ appliance3.coolingPower +" BTU and inverter: " + appliance3.hasInverter);
                 }
 
             }
