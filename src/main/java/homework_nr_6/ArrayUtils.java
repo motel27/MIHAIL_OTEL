@@ -32,5 +32,5 @@ public class ArrayUtils {
         System.out.println("min numver from array is: " + minValue);
 
     }
-//
+
 }
