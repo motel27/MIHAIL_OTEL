@@ -30,7 +30,6 @@ public class ArrayUtils {
 
         int minValue = findMin(array);
         System.out.println("min numver from array is: " + minValue);
-
     }
 
 }
